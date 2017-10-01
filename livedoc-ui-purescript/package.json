@@ -1,0 +1,24 @@
+{
+  "name": "livedoc-ui-purescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build-webpack": "webpack entry.js static/bundle.js",
+    "watch": "pulp -w browserify -t static/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-class": "^15.6.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}
