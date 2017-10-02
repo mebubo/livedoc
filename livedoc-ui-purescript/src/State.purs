@@ -1,5 +1,10 @@
 module State where
 
-type State = Int
+import Pux.DOM.Events (DOMEvent)
 
-data Event = Increment | Decrement
+type State = {
+  form :: String
+  }
+
+data Event = FormUpdate String
+  | FormSubmit DOMEvent
