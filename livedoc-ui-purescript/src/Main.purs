@@ -9,7 +9,8 @@ import Control.Monad.Eff.Console (CONSOLE)
 import Control.Monad.Eff.Exception (EXCEPTION, Error)
 import DOM (DOM)
 import DOM.Event.Event (preventDefault)
-import Data.Either (Either)
+import Data.Bifunctor (lmap)
+import Data.Either (Either(..))
 import Data.Maybe (Maybe(..))
 import Network.HTTP.Affjax (AJAX, get)
 import Prelude hiding (div)
@@ -17,6 +18,7 @@ import Pux (EffModel, start)
 import Pux.Renderer.React (renderToDOM)
 import Signal.Channel (CHANNEL)
 import State (Event(..), State)
+import Json (Livedoc, readLivedoc)
 
 defaultUrl :: String
 defaultUrl = "http://localhost:2002/static/jsondoc.json"
@@ -33,8 +35,12 @@ foldp (FormSubmit ev) s =
 foldp (RequestDoc url) s =
   { state: s
   , effects: [ do
-    res <- attempt $ get url
-    log $ "received " <> show ((_.response <$> res) :: Either Error String)
+    result <- attempt $ get url
+    let response = (_.response <$> result) :: Either Error String
+        livedoc = case response of
+          Left e -> Left $ show e
+          Right s -> lmap show $ readLivedoc s
+    log $ "received " <> show (livedoc :: Either String Livedoc)
     pure $ Just $ ReceiveDoc "hello"
   ]}
 foldp (ReceiveDoc d) s =
