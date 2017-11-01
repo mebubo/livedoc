@@ -1,0 +1,1844 @@
+{
+  "version": "1.0",
+  "basePath": "http://localhost:8080",
+  "apis": {
+    "": [
+      {
+        "livedocId": "b46d7d1e-9e24-4ec8-bab3-c6af061c30a8",
+        "name": "Game",
+        "description": "In-game events management",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "group": "",
+        "methods": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "5665c723-215e-4dc5-abec-bae60c2c2b65",
+            "path": [
+              "/game/prepareMove"
+            ],
+            "method": "prepareMove",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": {
+              "livedocId": "2e0acd5b-e2e0-41ce-9135-8fa80fd3b403",
+              "type": {
+                "type": [
+                  "Prepare Move Action"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Prepare Move Action"
+              },
+              "template": null
+            },
+            "response": {
+              "livedocId": "d0448ed0-3e6f-48e2-9123-20881dfb33b3",
+              "type": {
+                "type": [
+                  "void"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "void"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "Prepares the player's next move. When all players have prepared their moves, all moves are executed.",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/game/prepareMove"
+            ]
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "9ad878a6-e086-4668-8a80-568b31e14ab2",
+            "path": [
+              "/game/sayReady"
+            ],
+            "method": "ready",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": null,
+            "response": {
+              "livedocId": "a516ca3c-20a4-4913-8f07-cf4fe594ab32",
+              "type": {
+                "type": [
+                  "void"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "void"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "Notifies the game that the player is ready to receive his hand.",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/game/sayReady"
+            ]
+          }
+        ],
+        "supportedversions": null,
+        "auth": null
+      },
+      {
+        "livedocId": "6959c45a-2356-496f-bb4a-f2067a5a8310",
+        "name": "Game Browser",
+        "description": "This is the place where the player looks for a game",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "group": "",
+        "methods": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "3deb9c9c-3a5b-4983-9d5b-1e8d3753ee2e",
+            "path": [
+              "/lobby/create"
+            ],
+            "method": "createGame",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": {
+              "livedocId": "156cfaeb-586f-4290-880c-cc27ff922ba9",
+              "type": {
+                "type": [
+                  "Create Game Action"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Create Game Action"
+              },
+              "template": null
+            },
+            "response": {
+              "livedocId": "4f515858-0bf4-442f-98eb-b3fa4dc06af2",
+              "type": {
+                "type": [
+                  "Lobby"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Lobby"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "Create a new lobby.",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/lobby/create"
+            ]
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "86d6a764-4630-4827-9e43-48b3a6bcb9a9",
+            "path": [
+              "/lobby/join"
+            ],
+            "method": "joinGame",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": {
+              "livedocId": "211210ac-6cb3-43c3-a03a-1c15420caca2",
+              "type": {
+                "type": [
+                  "Join Game Action"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Join Game Action"
+              },
+              "template": null
+            },
+            "response": {
+              "livedocId": "f21ee9ee-8cf0-4580-be76-9d7361a3f871",
+              "type": {
+                "type": [
+                  "Lobby"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Lobby"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "Join an existing lobby.",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/lobby/join"
+            ]
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "cb151ffc-b764-443e-b575-7f20cb358511",
+            "path": [
+              "/games"
+            ],
+            "method": "listGames",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": null,
+            "response": {
+              "livedocId": "a8af95a1-56ce-4daf-b528-07c87d288da9",
+              "type": {
+                "type": [
+                  "Collection",
+                  "Lobby"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Collection of Lobby"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "Created or updated games. List of existing games received here on subscribe.",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/games"
+            ]
+          }
+        ],
+        "supportedversions": null,
+        "auth": null
+      },
+      {
+        "livedocId": "105213df-02bd-4151-a813-7e1b789cc863",
+        "name": "Home",
+        "description": "The home page of the game",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "group": "",
+        "methods": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "618427ac-2429-437e-9061-bcd4d3eb5129",
+            "path": [
+              "/chooseName"
+            ],
+            "method": "chooseName",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": {
+              "livedocId": "74ba9585-ef80-4721-8892-8cb99b7ca293",
+              "type": {
+                "type": [
+                  "Choose Name Action"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Choose Name Action"
+              },
+              "template": null
+            },
+            "response": {
+              "livedocId": "63560b80-0254-4ee1-8727-bc2a3c5560e0",
+              "type": {
+                "type": [
+                  "Player"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Player"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "Creates/updates the player's name (for the user's session)",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/chooseName"
+            ]
+          }
+        ],
+        "supportedversions": null,
+        "auth": null
+      },
+      {
+        "livedocId": "30189ca4-62fb-4b08-97d9-0bdbb553a989",
+        "name": "Lobby",
+        "description": "The place where players gather before a game",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "group": "",
+        "methods": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [
+              "Add description to ApiMethod"
+            ],
+            "livedocId": "1e349618-9e5d-4c62-9b80-95a547be671b",
+            "path": [
+              "/lobby/leave"
+            ],
+            "method": "leave",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": null,
+            "response": {
+              "livedocId": "d5fcea14-a2c4-4945-a5a8-adeee491a9cd",
+              "type": {
+                "type": [
+                  "void"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "void"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/lobby/leave"
+            ]
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [
+              "Add description to ApiMethod"
+            ],
+            "livedocId": "baf6c9ef-a5b9-48a4-a53f-e8481eb84c5b",
+            "path": [
+              "/lobby/reorderPlayers"
+            ],
+            "method": "reorderPlayers",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": {
+              "livedocId": "34e7e788-b15e-4896-9fc7-594b4a015cc6",
+              "type": {
+                "type": [
+                  "Reorder Players Action"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Reorder Players Action"
+              },
+              "template": null
+            },
+            "response": {
+              "livedocId": "1395a9ee-312e-4f52-97da-3ac9b0af2614",
+              "type": {
+                "type": [
+                  "void"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "void"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/lobby/reorderPlayers"
+            ]
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [
+              "Add description to ApiMethod"
+            ],
+            "livedocId": "47ba11f8-b2aa-4b9c-95be-67921d4a45f0",
+            "path": [
+              "/lobby/updateSettings"
+            ],
+            "method": "updateSettings",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": {
+              "livedocId": "12b40285-87e7-4ded-a871-2b51ae64804a",
+              "type": {
+                "type": [
+                  "Update Settings Action"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Update Settings Action"
+              },
+              "template": null
+            },
+            "response": {
+              "livedocId": "8048bd2e-5e67-4b35-9e88-032299872ca7",
+              "type": {
+                "type": [
+                  "void"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "void"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/lobby/updateSettings"
+            ]
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [
+              "Add description to ApiMethod"
+            ],
+            "livedocId": "2e10b1b2-e84b-40ce-9b6a-6a8414ee0fa5",
+            "path": [
+              "/lobby/startGame"
+            ],
+            "method": "startGame",
+            "verb": [
+              "GET"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "consumes": [
+              "application/json"
+            ],
+            "headers": [],
+            "pathparameters": [],
+            "queryparameters": [],
+            "bodyobject": null,
+            "response": {
+              "livedocId": "d24d3358-091a-4b29-9ae4-c46db4e7e01f",
+              "type": {
+                "type": [
+                  "void"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "void"
+              }
+            },
+            "responsestatuscode": "200 - OK",
+            "visibility": "UNDEFINED",
+            "stage": "UNDEFINED",
+            "id": "",
+            "description": "",
+            "summary": "",
+            "apierrors": [],
+            "supportedversions": null,
+            "auth": null,
+            "displayMethodAs": "URI",
+            "displayedMethodString": [
+              "/lobby/startGame"
+            ]
+          }
+        ],
+        "supportedversions": null,
+        "auth": null
+      }
+    ]
+  },
+  "objects": {
+    "": [
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: declaringClass"
+        ],
+        "livedocId": "72d25f68-a5bd-40b1-8935-021b7ec4a39d",
+        "name": "",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "40ecc6c4-3050-4fb1-a0c4-1542878d897a",
+            "type": {
+              "type": [
+                "Class",
+                "E"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "Class of E"
+            },
+            "name": "declaringClass",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "a5a43be1-cd4a-4e2f-a3f6-16355c187942",
+        "name": "Action",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "PLAY",
+          "PLAY_2",
+          "PLAY_LAST",
+          "PICK_NEIGHBOR_GUILD",
+          "WAIT"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: provider",
+          "Add description to field: resources"
+        ],
+        "livedocId": "c12f76cc-6930-4090-bdd3-d7bd59ce2f73",
+        "name": "BoughtResources",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "6e5d8177-a86a-4c04-863a-b0e7c7db68bf",
+            "type": {
+              "type": [
+                "Provider"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "Provider"
+            },
+            "name": "provider",
+            "description": null,
+            "format": [],
+            "allowedvalues": [
+              "LEFT_PLAYER",
+              "RIGHT_PLAYER"
+            ],
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "ba122644-e513-44a9-973f-656b3e30e6ec",
+            "type": {
+              "type": [
+                "Resources"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "Resources"
+            },
+            "name": "resources",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "1d2e9a64-4a79-4689-9a04-e718f8aee875",
+        "name": "Color",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "BROWN",
+          "GREY",
+          "YELLOW",
+          "BLUE",
+          "GREEN",
+          "RED",
+          "PURPLE"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: defaultTradingCost",
+          "Add description to field: discardedCardGold",
+          "Add description to field: initialGold",
+          "Add description to field: lostPointsPerDefeat",
+          "Add description to field: pointsPer3Gold",
+          "Add description to field: randomSeedForTests",
+          "Add description to field: timeLimitInSeconds",
+          "Add description to field: wonPointsPerVictoryPerAge",
+          "Add description to field: wonderSidePickMethod"
+        ],
+        "livedocId": "65768ffe-2cd6-444a-99b9-07b7534a6a8f",
+        "name": "CustomizableSettings",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "cb7859f0-673d-4258-a50e-f248eed10ac0",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "defaultTradingCost",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "926844e8-2285-4d2a-b0e2-9f771d1b2a29",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "discardedCardGold",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "f55ea36e-65e7-4480-a9c6-30245307e840",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "initialGold",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "7fabaa12-ff13-46ec-aa85-bf1f4f89c1ab",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "lostPointsPerDefeat",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "7206b6eb-9663-499c-8261-e95fed94ead9",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "pointsPer3Gold",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "784546a2-43c8-4c32-9a74-e9f1d271671e",
+            "type": {
+              "type": [
+                "long"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "long"
+            },
+            "name": "randomSeedForTests",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "5e0a57a7-e7f6-4d5a-92f5-80a0afcad38f",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "timeLimitInSeconds",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "4a120ed6-8b84-4e29-9477-0650e3bd78bb",
+            "type": {
+              "type": [
+                "Map"
+              ],
+              "mapKey": {
+                "type": [
+                  "Integer"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Integer"
+              },
+              "mapValue": {
+                "type": [
+                  "Integer"
+                ],
+                "mapKey": null,
+                "mapValue": null,
+                "oneLineText": "Integer"
+              },
+              "oneLineText": "Map[Integer, Integer]"
+            },
+            "name": "wonPointsPerVictoryPerAge",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "419b5cc9-0a20-4118-a7b4-bddf89c894d7",
+            "type": {
+              "type": [
+                "WonderSidePickMethod"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "WonderSidePickMethod"
+            },
+            "name": "wonderSidePickMethod",
+            "description": null,
+            "format": [],
+            "allowedvalues": [
+              "ALL_A",
+              "ALL_B",
+              "EACH_RANDOM",
+              "SAME_RANDOM_FOR_ALL"
+            ],
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "0044ef14-65c2-472f-b3ce-c7deeea33ebe",
+        "name": "ErrorType",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "USER_INPUT",
+          "VALIDATION",
+          "CLIENT",
+          "SERVER"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "7c46b77c-e65b-4303-aa60-a91defe2eae2",
+        "name": "HandRotationDirection",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "LEFT",
+          "RIGHT"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: id",
+          "Add description to field: name",
+          "Add description to field: players",
+          "Add description to field: settings",
+          "Add description to field: state"
+        ],
+        "livedocId": "69aa8b34-7ea8-4fd7-8923-baf77f84eab8",
+        "name": "Lobby",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "40bcd332-9826-4822-b286-40591df53236",
+            "type": {
+              "type": [
+                "long"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "long"
+            },
+            "name": "id",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "883ef28c-71ec-4f5a-9911-8904be62e6ec",
+            "type": {
+              "type": [
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "String"
+            },
+            "name": "name",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "cc90c061-d019-499c-a4f2-f3012390b048",
+            "type": {
+              "type": [
+                "List",
+                "Player"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "List of Player"
+            },
+            "name": "players",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "81676646-e4a3-4329-9793-85ad99001535",
+            "type": {
+              "type": [
+                "CustomizableSettings"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "CustomizableSettings"
+            },
+            "name": "settings",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "82bd2e5a-05db-42e9-8675-07948e620b6f",
+            "type": {
+              "type": [
+                "State"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "State"
+            },
+            "name": "state",
+            "description": null,
+            "format": [],
+            "allowedvalues": [
+              "LOBBY",
+              "PLAYING"
+            ],
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: displayName",
+          "Add description to field: index",
+          "Add description to field: ready",
+          "Add description to field: username"
+        ],
+        "livedocId": "1c54594c-76b8-43d9-88fb-2201800fe09b",
+        "name": "Player",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "dfd3fb86-7860-472e-85c2-5d7d5ee2e9e2",
+            "type": {
+              "type": [
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "String"
+            },
+            "name": "displayName",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "649fc9a8-f3a3-4e89-9f54-c5da1dae5c6e",
+            "type": {
+              "type": [
+                "int"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "int"
+            },
+            "name": "index",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "6521b0ef-1fcc-4b81-b17f-bd9b53be9408",
+            "type": {
+              "type": [
+                "boolean"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "boolean"
+            },
+            "name": "ready",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "4e19db23-cb5e-445d-a04f-8c55e1a31f5f",
+            "type": {
+              "type": [
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "String"
+            },
+            "name": "username",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: boughtResources",
+          "Add description to field: cardName",
+          "Add description to field: type"
+        ],
+        "livedocId": "b2de052e-9401-4e85-a20f-78d9a4a9adbe",
+        "name": "PlayerMove",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "17b58881-3b03-455f-8076-7634a570821d",
+            "type": {
+              "type": [
+                "List",
+                "BoughtResources"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "List of BoughtResources"
+            },
+            "name": "boughtResources",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "943acdf0-5e3f-4bc1-928b-cf8da3175d77",
+            "type": {
+              "type": [
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "String"
+            },
+            "name": "cardName",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          },
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "f46b116a-1ee5-4b14-a470-b426030a680b",
+            "type": {
+              "type": [
+                "MoveType"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "MoveType"
+            },
+            "name": "type",
+            "description": null,
+            "format": [],
+            "allowedvalues": [
+              "PLAY",
+              "PLAY_FREE",
+              "UPGRADE_WONDER",
+              "DISCARD",
+              "COPY_GUILD"
+            ],
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "2a848ac8-25c5-4bde-a83c-57bbc9104363",
+        "name": "Provider",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "LEFT_PLAYER",
+          "RIGHT_PLAYER"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "07d05581-b3af-4c8d-a6da-a78cda9ba196",
+        "name": "ResourceType",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "WOOD",
+          "STONE",
+          "ORE",
+          "CLAY",
+          "GLASS",
+          "PAPYRUS",
+          "LOOM"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: empty"
+        ],
+        "livedocId": "aa96915c-cddd-4356-832b-c3e216076750",
+        "name": "Resources",
+        "description": "",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "6cdc9674-895d-45ac-9d42-ff73858b5384",
+            "type": {
+              "type": [
+                "boolean"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "boolean"
+            },
+            "name": "empty",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "f2ba9c5b-3b7c-4c47-b084-44dc63ad02ac",
+        "name": "ScienceType",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "COMPASS",
+          "WHEEL",
+          "TABLET"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "cf637865-cad9-4597-80e6-dd1614162681",
+        "name": "ScoreCategory",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "CIVIL",
+          "SCIENCE",
+          "MILITARY",
+          "TRADE",
+          "GUILD",
+          "WONDER",
+          "GOLD"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "878b29b8-c7b8-4918-8d3e-3bf16e164690",
+        "name": "SpecialAbility",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "PLAY_LAST_CARD",
+          "ONE_FREE_PER_AGE",
+          "PLAY_DISCARDED",
+          "COPY_GUILD"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "4e48ebca-2edb-46aa-9749-3f0c04120f09",
+        "name": "State",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "LOBBY",
+          "PLAYING"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [],
+        "livedocId": "8ae05c5d-ce1a-4fa2-b7d4-be753b095b67",
+        "name": "WonderSide",
+        "description": "",
+        "fields": [],
+        "supportedversions": null,
+        "allowedvalues": [
+          "A",
+          "B"
+        ],
+        "group": "",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": false
+      }
+    ],
+    "Actions": [
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: playerName"
+        ],
+        "livedocId": "dcc2cd36-f99b-4405-b14c-87954acab10c",
+        "name": "Choose Name Action",
+        "description": "The action to choose the player's name. This is the first action that should be called.",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "44b1eec7-8ff2-463b-b017-3a07266adc53",
+            "type": {
+              "type": [
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "String"
+            },
+            "name": "playerName",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "Actions",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": true
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: gameName"
+        ],
+        "livedocId": "af56ecff-508f-4e8e-a1a1-b6851ae46644",
+        "name": "Create Game Action",
+        "description": "The action to create a game.",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "6654ae8c-fd5c-4323-a3d7-71ba7bfd2230",
+            "type": {
+              "type": [
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "String"
+            },
+            "name": "gameName",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "Actions",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": true
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: gameId"
+        ],
+        "livedocId": "d794b1f7-0272-4633-b523-c53da1e9592b",
+        "name": "Join Game Action",
+        "description": "The action to join a game.",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "35817091-09b3-4448-9b2c-063d7904e7c7",
+            "type": {
+              "type": [
+                "Long"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "Long"
+            },
+            "name": "gameId",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "Actions",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": true
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: move"
+        ],
+        "livedocId": "14120042-2a61-4f46-be4d-88e6f5f5c5be",
+        "name": "Prepare Move Action",
+        "description": "The action to prepare the next move during a game.",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "125e56e4-3719-460d-a7ab-413e74b797a1",
+            "type": {
+              "type": [
+                "PlayerMove"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "PlayerMove"
+            },
+            "name": "move",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "Actions",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": true
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: orderedPlayers"
+        ],
+        "livedocId": "de84d077-2eee-44cc-9567-45ff59f8f1a2",
+        "name": "Reorder Players Action",
+        "description": "The action to update the order of the players around the table. Can only be called in the lobby by the owner of the game.",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "eceab19f-4413-4647-bfd7-8970b25a3fc5",
+            "type": {
+              "type": [
+                "List",
+                "String"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "List of String"
+            },
+            "name": "orderedPlayers",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "Actions",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": true
+      },
+      {
+        "jsondocerrors": [],
+        "jsondocwarnings": [],
+        "jsondochints": [
+          "Add description to field: settings"
+        ],
+        "livedocId": "6ccd2307-68ba-44ed-90d6-d66172ee7307",
+        "name": "Update Settings Action",
+        "description": "The action to update the settings of the game. Can only be called in the lobby by the owner of the game.",
+        "fields": [
+          {
+            "jsondocerrors": [],
+            "jsondocwarnings": [],
+            "jsondochints": [],
+            "livedocId": "9fb34d83-d5e5-4239-bed2-3e7894a0f5ac",
+            "type": {
+              "type": [
+                "CustomizableSettings"
+              ],
+              "mapKey": null,
+              "mapValue": null,
+              "oneLineText": "CustomizableSettings"
+            },
+            "name": "settings",
+            "description": null,
+            "format": [],
+            "allowedvalues": null,
+            "required": "false",
+            "supportedversions": null,
+            "order": 2147483647,
+            "displayedFormat": ""
+          }
+        ],
+        "supportedversions": null,
+        "allowedvalues": [],
+        "group": "Actions",
+        "visibility": "UNDEFINED",
+        "stage": "UNDEFINED",
+        "template": null,
+        "show": true
+      }
+    ]
+  },
+  "flows": {},
+  "global": {
+    "livedocId": "445ad0db-084a-4d4c-9fc6-b94a1ac2dbc9",
+    "sections": [
+      {
+        "livedocId": "588277e1-625f-48bd-86eb-1d125604b366",
+        "title": "First steps",
+        "paragraphs": [
+          "Welcome to JsonDoc."
+        ]
+      }
+    ],
+    "changelogset": {
+      "livedocId": "c4cd848e-c9c2-42c4-8e02-0a413c522c9d",
+      "changelogs": []
+    },
+    "migrationset": {
+      "livedocId": "28ee971d-78a5-497d-bf58-7adebc8b9459",
+      "migrations": []
+    }
+  },
+  "playgroundEnabled": true,
+  "displayMethodAs": "URI"
+}
