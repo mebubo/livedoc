@@ -18,7 +18,7 @@ import Pux (EffModel, start)
 import Pux.Renderer.React (renderToDOM)
 import Signal.Channel (CHANNEL)
 import State (Event(..), State)
-import Json (Livedoc, readLivedoc)
+import Json (readLivedoc)
 
 defaultUrl :: String
 defaultUrl = "http://localhost:2002/static/jsondoc.json"
@@ -40,7 +40,7 @@ foldp (RequestDoc url) s =
         livedoc = case response of
           Left e -> Left $ show e
           Right s -> lmap show $ readLivedoc s
-    log $ "received " <> show (livedoc :: Either String Livedoc)
+    log $ "received " <> show livedoc
     pure $ Just $ ReceiveDoc "hello"
   ]}
 foldp (ReceiveDoc d) s =
